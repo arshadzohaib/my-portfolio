@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Zohaib Arshad - Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">ZOHAIB.</div>
+
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#tools">TOOLS &amp; STACKS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="nav-backdrop" aria-hidden="true"></div>
+
+    <section id="home">
+        <div class="hero">
+
+            <div class="hero-text">
+                <h1>
+                    ZOHAIB<br>
+                    <span>ARSHAD</span>
+                </h1>
+            </div>
+
+            <p class="hero-tagline">
+                CODE TO CREATE.<br>
+                ADAPT TO LEARN.<br>
+                INSPIRE.
+            </p>
+
+            <div class="japanese-text">サムライ</div>
+
+            <div class="hero-info">
+                <h2>Exclusive</h2>
+                <p>
+                    Blending technology and creativity
+                    to build meaningful digital experiences.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+
+        <img class="about-image" src="assets/samurai2.jpg" alt="Samurai">
+
+        <div class="about-content">
+
+            <p class="about-label">02 / ABOUT ME</p>
+            <p class="about-small">OPEN SOURCE</p>
+
+            <h2>Digital Kensei — blending
+                technology with creativity.
+            </h2>
+
+            <p class="about-description">
+                I'm Zohaib, an ECE engineering student
+                passionate about coding and building
+                meaningful digital experiences.
+            </p>
+
+            <h3>
+                INSPIRED BY THE PAST.<br>
+                BUILT FOR THE FUTURE.
+            </h3>
+
+            <div class="about-features">
+                <div class="feature">
+                    <span>✳</span>
+                    <h4>Clean Code</h4>
+                    <p>Simple. Scalable.</p>
+                </div>
+
+                <div class="feature">
+                    <span>⌘</span>
+                    <h4>Modern Stack</h4>
+                    <p>Always Evolving.</p>
+                </div>
+
+                <div class="feature">
+                    <span>✺</span>
+                    <h4>Real Problems</h4>
+                    <p>Real Solutions.</p>
+                </div>
+
+                <div class="feature">
+                    <span>❋</span>
+                    <h4>Continuous Learning</h4>
+                    <p>Better Every Day.</p>
+                </div>
+            </div>
+
+            <a href="#projects" class="about-btn">
+                ↗ &nbsp; View Portfolio
+                <span>Explore My Work</span>
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="projects-header">
+            <p class="section-label">03 / PROJECTS</p>
+            <h2>Selected Work</h2>
+        </div>
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Project One</h3>
+                    <p>A brief description of this project and what technologies were used.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Project Two</h3>
+                    <p>A brief description of this project and what technologies were used.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3>Project Three</h3>
+                    <p>A brief description of this project and what technologies were used.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="tools" class="tools-section">
+        <div class="tools-header">
+            <p class="section-label">04 / TOOLS &amp; STACKS</p>
+            <h2>Technologies I Work With</h2>
+        </div>
+        <div class="tools-grid">
+            <div class="tool-category">
+                <h3>Frontend</h3>
+                <ul class="tool-list">
+                    <li>React</li>
+                    <li>Vue.js</li>
+                    <li>TypeScript</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+            </div>
+            <div class="tool-category">
+                <h3>Backend</h3>
+                <ul class="tool-list">
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+            <div class="tool-category">
+                <h3>DevOps &amp; Tools</h3>
+                <ul class="tool-list">
+                    <li>Docker</li>
+                    <li>Git/GitHub</li>
+                    <li>CI/CD</li>
+                    <li>AWS</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-header">
+            <p class="section-label">05 / CONTACT</p>
+            <h2>Let's Work Together</h2>
+        </div>
+        <div class="contact-content">
+            <p class="contact-description">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="contact-links">
+                <a href="#" class="contact-link">GitHub</a>
+                <a href="#" class="contact-link">LinkedIn</a>
+                <a href="#" class="contact-link">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Zohaib Arshad. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
