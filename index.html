@@ -10,51 +10,93 @@
 
 <body>
     <nav class="navbar">
-        <div class="logo">ZOHAIB.</div>
+        <a class="brand" href="#home">
+            <span class="brand-label">01 Home</span>
+            <span class="brand-logo">ZA</span>
+        </a>
 
-        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-        </button>
+        <div class="menu-cluster">
+            <span class="menu-label">MENU</span>
+            <span class="menu-rule" aria-hidden="true"></span>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m6 9 6 6 6-6"/>
+                </svg>
+            </button>
+        </div>
 
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
             <li><a href="#home">HOME</a></li>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#tools">TOOLS &amp; STACKS</a></li>
+            <li><a href="#tools">TOOLS & STACKS</a></li>
             <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
     <div class="nav-backdrop" aria-hidden="true"></div>
 
     <section id="home">
+        <div class="hero-bg" aria-hidden="true"></div>
+
         <div class="hero">
 
-            <div class="hero-text">
-                <h1>
-                    ZOHAIB<br>
-                    <span>ARSHAD</span>
-                </h1>
+            <div class="hero-content">
+                <h1 class="hero-title">Zohaib Arshad<span class="red">.</span></h1>
+                <p class="hero-role">Backend<span class="red">.</span> Full Stack<span class="red">.</span><br>GenAI<span class="red">.</span></p>
+                <p class="hero-desc">Building software, AI systems &<br>products that actually do something.</p>
+                <p class="hero-date">2026 — Future</p>
+                <a class="cv-btn" href="assets/Zohaib_Arshad_Resume.pdf" download="Zohaib_Arshad_CV.pdf">
+                    <span class="cv-btn-fill" aria-hidden="true"></span>
+                    <span class="cv-btn-text">Download My CV</span>
+                    <span class="cv-btn-arrow" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 5v14"/>
+                            <path d="m19 12-7 7-7-7"/>
+                        </svg>
+                    </span>
+                </a>
             </div>
 
-            <p class="hero-tagline">
-                CODE TO CREATE.<br>
-                ADAPT TO LEARN.<br>
-                INSPIRE.
-            </p>
-
-            <div class="japanese-text">サムライ</div>
-
-            <div class="hero-info">
-                <h2>Exclusive</h2>
-                <p>
-                    Blending technology and creativity
-                    to build meaningful digital experiences.
-                </p>
-            </div>
+            <nav class="hero-nav" aria-label="Hero section navigation">
+                <a class="hero-nav-emblem" href="#home" aria-label="Back to top">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9.25" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                        <path d="M12 6.75 17.25 12 12 17.25 6.75 12z" fill="#e32636"/>
+                    </svg>
+                </a>
+                <a class="hero-nav-item" href="#projects">
+                    PROJECTS
+                    <svg class="hero-nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 17 17 7"/>
+                        <path d="M7 7h10v10"/>
+                    </svg>
+                </a>
+                <a class="hero-nav-item" href="#about">
+                    ABOUT
+                    <svg class="hero-nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 17 17 7"/>
+                        <path d="M7 7h10v10"/>
+                    </svg>
+                </a>
+                <a class="hero-nav-item" href="#tools">
+                    STACK
+                    <svg class="hero-nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 17 17 7"/>
+                        <path d="M7 7h10v10"/>
+                    </svg>
+                </a>
+                <a class="hero-nav-item" href="#contact">
+                    CONTACT
+                    <svg class="hero-nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M7 17 17 7"/>
+                        <path d="M7 7h10v10"/>
+                    </svg>
+                </a>
+            </nav>
 
         </div>
+
+        <div class="hero-petals" aria-hidden="true"></div>
     </section>
 
     <section id="about" class="about-section">
@@ -125,25 +167,23 @@
             <article class="project-card">
                 <div class="project-image"></div>
                 <div class="project-content">
-                    <h3>Project One</h3>
-                    <p>A brief description of this project and what technologies were used.</p>
-                    <a href="#" class="project-link">View Project →</a>
+                    <h3>GitHub Profile Analyser</h3>
+                    <p>Analyze GitHub profiles to explore repositories, programming languages, and developer activity.<br>Turn GitHub data into a clear, useful developer overview.</p>
+                    <a href="https://github.com/arshadzohaib" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a>
                 </div>
             </article>
             <article class="project-card">
                 <div class="project-image"></div>
                 <div class="project-content">
-                    <h3>Project Two</h3>
-                    <p>A brief description of this project and what technologies were used.</p>
-                    <a href="#" class="project-link">View Project →</a>
+                    <h3>My Portfolio</h3>
+                    <p>A cinematic portfolio showcasing my projects, technical skills, and development journey.<br>Designed with HTML, CSS, JavaScript, and GSAP animations.</p>
+                    <a href="https://github.com/arshadzohaib" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a>
                 </div>
             </article>
             <article class="project-card">
                 <div class="project-image"></div>
-                <div class="project-content">
-                    <h3>Project Three</h3>
-                    <p>A brief description of this project and what technologies were used.</p>
-                    <a href="#" class="project-link">View Project →</a>
+                <div class="project-content project-coming-soon">
+                    <span class="coming-soon-label">COMING SOON</span>
                 </div>
             </article>
         </div>
@@ -151,64 +191,306 @@
 
     <section id="tools" class="tools-section">
         <div class="tools-header">
-            <p class="section-label">04 / TOOLS &amp; STACKS</p>
-            <h2>Technologies I Work With</h2>
+            <p class="tools-label"><span class="label-dot"></span>03. TECH STACK</p>
+            <h2>Tools I Use to Build the <span class="crimson">Future.</span></h2>
+            <p class="tools-description">A closer look at the languages, frameworks, and AI tools I reach for when
+                building software and intelligent systems.</p>
         </div>
-        <div class="tools-grid">
-            <div class="tool-category">
-                <h3>Frontend</h3>
-                <ul class="tool-list">
-                    <li>React</li>
-                    <li>Vue.js</li>
-                    <li>TypeScript</li>
-                    <li>Tailwind CSS</li>
-                </ul>
+
+        <div class="tools-cards">
+
+            <div class="tool-card">
+                <div class="card-header">
+                    <span class="dot-red"></span>Languages
+                </div>
+                <div class="logos">
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/python" alt="Python"></div>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/cplusplus" alt="C++"></div>
+                        <span>C++</span>
+                    </div>
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/javascript" alt="JavaScript"></div>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
             </div>
-            <div class="tool-category">
-                <h3>Backend</h3>
-                <ul class="tool-list">
-                    <li>Node.js</li>
-                    <li>Express</li>
-                    <li>PostgreSQL</li>
-                    <li>MongoDB</li>
-                </ul>
+
+            <div class="tool-card">
+                <div class="card-header">
+                    <span class="dot-red"></span>Frontend
+                </div>
+                <div class="logos">
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/react" alt="React"></div>
+                        <span>React</span>
+                    </div>
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/tailwindcss" alt="Tailwind CSS"></div>
+                        <span>Tailwind CSS</span>
+                    </div>
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/gsap" alt="GSAP"></div>
+                        <span>GSAP</span>
+                    </div>
+                </div>
             </div>
-            <div class="tool-category">
-                <h3>DevOps &amp; Tools</h3>
-                <ul class="tool-list">
-                    <li>Docker</li>
-                    <li>Git/GitHub</li>
-                    <li>CI/CD</li>
-                    <li>AWS</li>
-                </ul>
+
+            <div class="tool-card">
+                <div class="card-header">
+                    <span class="dot-red"></span>Backend
+                </div>
+                <div class="logos">
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/fastapi" alt="FastAPI"></div>
+                        <span>FastAPI</span>
+                    </div>
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js"></div>
+                        <span>Node.js</span>
+                    </div>
+                </div>
             </div>
+
+            <div class="tool-card">
+                <div class="card-header">
+                    <span class="dot-red"></span>Database
+                </div>
+                <div class="logos">
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/postgresql" alt="PostgreSQL"></div>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/mongodb" alt="MongoDB"></div>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="card-header">
+                    <span class="dot-red"></span>AI / ML &amp; Tools
+                </div>
+<div class="logos">
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/langchain" alt="LangChain"></div>
+                        <span>LangChain</span>
+                    </div>
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/langgraph" alt="LangGraph"></div>
+                        <span>LangGraph</span>
+                    </div>
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/huggingface" alt="Hugging Face"></div>
+                        <span>Hugging Face</span>
+                    </div>
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/numpy" alt="NumPy"></div>
+                        <span>NumPy</span>
+                    </div>
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/pandas" alt="pandas"></div>
+                        <span>pandas</span>
+                    </div>
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/mistralai" alt="Mistral AI"></div>
+                        <span>Mistral AI</span>
+                    </div>
+                </div>
+                <div class="logos">
+                    <div class="tech">
+                        <div class="logo logo-mark" aria-hidden="true">VDB</div>
+                        <span>Vector DB</span>
+                    </div>
+                    <div class="tech">
+                        <div class="logo logo-mark" aria-hidden="true">RAG</div>
+                        <span>RAG</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-card">
+                <div class="card-header">
+                    <span class="dot-red"></span>Other Tools
+                </div>
+                <div class="logos">
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/git" alt="Git"></div>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech">
+                        <div class="logo"><img src="https://cdn.simpleicons.org/github" alt="GitHub"></div>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="tech">
+                        <div class="logo"><img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                alt="VS Code"></div>
+                        <span>VS Code</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section id="contact" class="contact-section">
-        <div class="contact-header">
-            <p class="section-label">05 / CONTACT</p>
-            <h2>Let's Work Together</h2>
-        </div>
-        <div class="contact-content">
-            <p class="contact-description">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
-            <form class="contact-form" id="contact-form">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-            <div class="contact-links">
-                <a href="#" class="contact-link">GitHub</a>
-                <a href="#" class="contact-link">LinkedIn</a>
-                <a href="#" class="contact-link">Email</a>
+        <div class="contact-inner">
+
+            <div class="contact-header">
+                <p class="contact-label"><span class="label-dot"></span>04. CONTACT</p>
+                <h2 class="contact-title">Let's Build<br>Something<br><span class="crimson">Amazing.</span></h2>
+                <p class="contact-description">Have a project idea, collaboration opportunity, or just want to connect?
+                    Feel free to reach out.</p>
             </div>
+
+            <div class="contact-rows">
+
+                <div class="contact-row">
+                    <a class="contact-row-link" href="mailto:Arshadzohaib315@gmail.com">
+                        <span class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                aria-hidden="true">
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                        </span>
+                        <span class="contact-row-body">
+                            <span class="contact-row-label">Email</span>
+                            <span class="contact-row-value" id="contact-email">Arshadzohaib315@gmail.com</span>
+                        </span>
+                    </a>
+                    <button type="button" class="copy-btn" data-copy-target="contact-email"
+                        aria-label="Copy email address">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="contact-row">
+                    <a class="contact-row-link" href="https://www.linkedin.com/in/zohaib-arshad-14b4693bb" target="_blank" rel="noopener noreferrer">
+                        <span class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" aria-hidden="true">
+                                <path fill="#0076b2"
+                                    d="M116 3H12a8.91 8.91 0 00-9 8.8v104.42a8.91 8.91 0 009 8.78h104a8.93 8.93 0 009-8.81V11.77A8.93 8.93 0 00116 3z" />
+                                <path fill="#fff"
+                                    d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 11-10.5 10.49 10.5 10.5 0 0110.5-10.49M50.53 48.73h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z" />
+                            </svg>
+                        </span>
+                        <span class="contact-row-body">
+                            <span class="contact-row-label">LinkedIn</span>
+                            <span class="contact-row-value"
+                                id="contact-linkedin">zohaib Arshad</span>
+                        </span>
+                    </a>
+                    <button type="button" class="copy-btn" data-copy-target="contact-linkedin"
+                        aria-label="Copy LinkedIn URL">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="contact-row">
+                    <a class="contact-row-link" href="https://github.com/arshadzohaib" target="_blank" rel="noopener noreferrer">
+                        <span class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                aria-hidden="true">
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
+                        </span>
+                        <span class="contact-row-body">
+                            <span class="contact-row-label">GitHub</span>
+                            <span class="contact-row-value" id="contact-github">Arshadzohaib</span>
+                        </span>
+                    </a>
+                    <button type="button" class="copy-btn" data-copy-target="contact-github"
+                        aria-label="Copy GitHub URL">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+
+<div class="contact-row">
+                    <a class="contact-row-link" href="https://www.instagram.com/zohaiv._/" target="_blank" rel="noopener noreferrer">
+                        <span class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                                <defs>
+                                    <linearGradient id="contact-instagram-gradient" x1="2" y1="22" x2="22" y2="2"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset="0%" stop-color="#FFDC80" />
+                                        <stop offset="25%" stop-color="#F77737" />
+                                        <stop offset="50%" stop-color="#F56040" />
+                                        <stop offset="75%" stop-color="#E1306C" />
+                                        <stop offset="100%" stop-color="#833AB4" />
+                                    </linearGradient>
+                                </defs>
+                                <path fill="url(#contact-instagram-gradient)"
+                                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.992 3.992 0 0 1 8 12.0077z"/>
+                            </svg>
+                        </span>
+                        <span class="contact-row-body">
+                            <span class="contact-row-label">Instagram</span>
+                            <span class="contact-row-value"
+                                id="contact-instagram">zohaiv._</span>
+                        </span>
+                    </a>
+                    <button type="button" class="copy-btn" data-copy-target="contact-instagram"
+                        aria-label="Copy Instagram URL">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2-2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="contact-form-block">
+                <h3 class="contact-form-title"><span class="dot-red"></span>Send a Message</h3>
+                <form class="contact-form" id="contact-form" novalidate>
+                    <input type="hidden" name="access_key" value="a4c381cc-3d25-45df-88c0-7f2f67d4085b">
+                    <div class="form-group">
+                        <input type="text" name="name" id="contact-name" placeholder="Your Name" required>
+                        <span class="form-error" id="contact-name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="contact-email-input" placeholder="Your Email" required>
+                        <span class="form-error" id="contact-email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="contact-message" placeholder="Your Message" rows="5"
+                            required></textarea>
+                        <span class="form-error" id="contact-message-error"></span>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Send Message <span class="btn-arrow"
+                                aria-hidden="true">&#8594;</span></button>
+                        <p class="form-status" id="contact-form-status" role="status" aria-live="polite"></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact-outro">
+                <span class="contact-outro-rule" aria-hidden="true"></span>
+                <p class="contact-outro-quote">Code with precision.<br>Create with Vision.</p>
+            </div>
+
         </div>
     </section>
 
@@ -216,6 +498,13 @@
         <p>&copy; 2025 Zohaib Arshad. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"
+        integrity="sha512-oJ8QbaQThQoJZ7oEv+29jfPM6CcP+zUxh3PKJs1vyOhx0UraUrE7PQgeItu3dOuCJyrzWpoYMsVjkkPEBzbUqw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js"
+        integrity="sha512-OaIE7ud4P04EhnBuhEcm0wQSceIxbi2pV03oBLS/+F6ampfxsnxcIxOp7H2eF9G7N0kEht0VAzOLG+dTLSo17Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
